@@ -46,6 +46,7 @@ class PEFTHelper:
         """
         error_msg = []
         if self.modules_to_save:
+            #TODO pass the task type as classification and only skip for classify task
             error_msg.append("vLLM only supports modules_to_save being None.")
         if self.use_dora:
             error_msg.append("vLLM does not yet support DoRA.")
